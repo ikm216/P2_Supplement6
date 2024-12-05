@@ -9,8 +9,14 @@ public class Main {
         // List<Integer> rand_list = su.random_list_integers(size);
         // System.out.println("Random List: " + rand_list);
 
-        List<Integer> list = new ArrayList<>(Arrays.asList(2, 2, 4, 4, 4, 4, 3, 3, 3));
-        Map<Integer, Integer> test = su.mapOccurrences(list);
-        System.out.println("Occurences: " + test);
+        // List<Integer> list = new ArrayList<>(Arrays.asList(2, 2, 4, 4, 4, 4, 3, 3, 3));
+        // Map<Integer, Integer> test1 = su.mapOccurrences(list);
+        // System.out.println("Occurences: " + test1);
+
+        List<Integer> list = new ArrayList<>(Arrays.asList(8, 5, 3, 6));
+        List<Integer> test2 = su.sortArr(list);
+        System.out.println("Sorted List: " + test2);
+
+        scan.close();
     }
 }

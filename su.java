@@ -35,4 +35,11 @@ public class su{
         }
         return occurs;
     }
+
+    public static List<Integer> sortArr(List<Integer> list){
+        List<Integer> sort_list = new ArrayList<>(list);
+        Collections.sort(sort_list);
+
+        return sort_list;
+    }
 }
