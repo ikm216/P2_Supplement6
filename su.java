@@ -16,4 +16,17 @@ public class su{
 
         return rand_list;
     }
+
+    public static Map<Integer, Integer> mapOccurrences(List<Integer> list){
+        Map<Integer, Integer> occurs = new HashMap<>();
+        for(int num: list){
+            if(occurs.containsKey(num)){
+                occurs.put(num, occurs.get(num) + 1);
+            }
+            else{
+                occurs.put(num, 1);
+            }
+        }
+        return occurs;
+    }
 }
