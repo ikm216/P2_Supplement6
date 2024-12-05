@@ -35,7 +35,12 @@ public class su{
         }
         return occurs;
     }
-
+    /**
+ * Sorts a list of integers in ascending order.
+ *
+ * @param list The list of integers to sort.
+ * @return The sorted list of integers.
+ */
     public static List<Integer> sortArr(List<Integer> list){
         List<Integer> sort_list = new ArrayList<>(list);
         Collections.sort(sort_list);
