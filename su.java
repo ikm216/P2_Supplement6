@@ -17,6 +17,12 @@ public class su{
         return rand_list;
     }
 
+    /**
+ * Counts the occurrences of each integer in a list.
+ *
+ * @param list The list of integers.
+ * @return A map where the key is the integer, and the value is the number of occurrences.
+ */
     public static Map<Integer, Integer> mapOccurrences(List<Integer> list){
         Map<Integer, Integer> occurs = new HashMap<>();
         for(int num: list){
