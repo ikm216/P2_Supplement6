@@ -1,6 +1,5 @@
 import java.util.*;
 import org.junit.*;
-import org.junit.jupiter.api.TestFactory;
 
 public class test_java {
     @Test
@@ -17,5 +16,12 @@ public class test_java {
         Assert.assertEquals(2, (int) test.get(2));
         Assert.assertEquals(4, (int) test.get(4));
         Assert.assertEquals(3, (int) test.get(3));
+    }
+
+    @Test
+    public void test_should_return_a_list_sorted_ascending_order(){
+        List<Integer> list = new ArrayList<>(Arrays.asList(8, 5, 3, 6));
+        List<Integer> test = su.sortArr(list);
+        Assert.assertEquals(Arrays.asList(3, 5, 6, 8), test);
     }
 }
